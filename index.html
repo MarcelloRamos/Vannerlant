@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo do Agente</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .agent-photo {
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .agent-photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .info p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu Lateral</h2>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contatos</a>
+        <a href="#">Configurações</a>
+    </div>
+    <div class="main-content">
+        <div class="agent-photo">
+            <!-- Substitua "placeholder-image.png" pela URL da imagem do agente -->
+            <img src="https://via.placeholder.com/300" alt="Foto do Agente">
+        </div>
+        <div class="info">
+            <h1>Nome do Agente</h1>
+            <p>Desempenho: [Informações de desempenho aqui]</p>
+        </div>
+    </div>
+</body>
+</html>
